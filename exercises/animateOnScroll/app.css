@@ -1,0 +1,18 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.img{
+    opacity: 0;
+    visibility: visible;
+    transform: scale(0);
+    transition:  all 1s linear;
+}
+
+
+.active{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition:  all 1s linear;
+}

@@ -1,0 +1,49 @@
+.validationEmail{
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: gray 0 0 5px;
+    padding: 20px;
+    position: relative;
+}
+
+.input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    outline:  none;
+    border: 0;
+    box-shadow: gray 0 0 5px;
+    font-size: 20px;
+}
+
+.checked{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+.img{
+    width: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+.valied{
+    background-color: aquamarine;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+.invalied{
+    background-color: crimson;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.true{
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,97 @@
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.progress{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: blue;
+    z-index: 999;
+  }
+body{
+    margin: 0;
+}
+.header{
+    &-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, #FECA01, #FE9201, #7BEF01);
+        box-shadow: gray 0px 0px 5px;
+        margin-top: 4px;
+        z-index: 99;
+        &--item{
+            font-size: 30px;
+            font-weight: 700;
+            padding: 20px;
+        }
+        &--link{
+            color: black;
+        }
+        &--fixed{
+            position: fixed;
+            top: 0 ;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1440px;
+            animation: fade forwards 0.3s 1;
+      }
+    }
+    &-banner{
+        background: url(https://images.unsplash.com/photo-1590845947670-c009801ffa74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmFubmVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60) no-repeat center center / cover;
+        width: 100%;
+        height: 500px;
+    }
+
+    
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+.row{
+    box-sizing: border-box;
+}
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+  }
+  
+  /* Fake image, just for this example */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    background: #ddd;
+  }
+  
+
+  @keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+
+  

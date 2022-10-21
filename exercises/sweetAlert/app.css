@@ -1,0 +1,26 @@
+.sweetAlert{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #eee;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: black 0px 0px 5px;
+    transform: translateX(150%);
+    transition: transform 0.4s linear;
+    animation: sweet 2s linear 1;
+}
+
+.sweetAlert-icon{
+    background-color: #0ACD87;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@keyframes sweet {
+    50%, 100%{
+        transform: translateX(0);
+    }
+}

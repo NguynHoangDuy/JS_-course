@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>MP3 Em Duy</title>
+</head>
+<body>
+    <div class="player">
+        <div class="player-box">
+            <div class="player-media">
+                <img src="https://cdn.dribbble.com/users/331579/screenshots/10622826/media/ddb72a54de6de6a206cfddcfe7099031.jpg?compress=1&resize=1200x900&vertical=top" alt="" class="player-img"/>
+            </div>
+            <div class="progress">
+                <input type="range" id="progress-bar" min="0" max="" value="0" class="bar">
+                <audio src="./files/Tinh-Yeu-Chap-Va-Mr-Siro.mp3" id="song"></audio>
+            </div>
+            <div class="player-num">
+                <span class="player-duration">0:00</span>
+                <span class="player-remaining">0:00</span>
+            </div>
+        </div>
+        <div class="player-tool">
+            <i class="fa fa-backward player-prev"></i>
+            <i class="fa fa-play player-play"></i>
+            <i class="fa fa-forward player-next"></i>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+
+</body>
+</html>
