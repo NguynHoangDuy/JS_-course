@@ -34,9 +34,7 @@ window.addEventListener("load", ()=>{
 
             if(minuteVideo === 0 && secondVideo === 0)
             {
-                playBtn.classList.add("fa-play")
-                playBtn.classList.remove("fa-pause")
-                playing = false;
+                video.currentTime = 0
             }
             progress.value = Math.round(((minutePlay*60)+secondPlay)*100/ video.duration)
             progress.style.background = `linear-gradient(to right, pink 0%, pink ${progress.value}%, slategray ${progress.value}%, slategray 100%)`
