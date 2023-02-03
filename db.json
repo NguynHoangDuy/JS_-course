@@ -1,0 +1,39 @@
+{
+  "posts": [],
+  "courses": [
+    {
+      "image": "https://img-b.udemycdn.com/course/240x135/3812184_290c.jpg",
+      "title": "Javascript cho người mới bắt đầu 2021",
+      "author": "Hau Nguyen",
+      "rating": "5",
+      "price": "1399000",
+      "bestSeller": false,
+      "buyAmount": "383",
+      "id": 1
+    },
+    {
+      "image": "https://img-b.udemycdn.com/course/240x135/3257380_c043_3.jpg",
+      "title": "ReactJS cho người mới bắt đầu 2020",
+      "author": "Hau Nguyen",
+      "rating": "4.8",
+      "price": "990.000",
+      "bestSeller": true,
+      "buyAmount": "641",
+      "id": 2
+    },
+    {
+      "image": "https://img-b.udemycdn.com/course/240x135/4467252_61d1_2.jpg",
+      "title": "React Ultimate - React.JS Cơ Bản Từ Z Đến A Cho Beginners",
+      "author": "Hỏi dân IT với Eric",
+      "rating": "5",
+      "price": "1049000",
+      "bestSeller": true,
+      "buyAmount": "140",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

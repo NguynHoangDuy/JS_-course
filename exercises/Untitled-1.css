@@ -1,0 +1,180 @@
+/* css animate post */
+
+.post-image-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  opacity: 0;
+}
+
+.post-image-mask > span {
+  position: absolute;
+  display: inline-block;
+  margin-right: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  top: 50%;
+  left: 50%;
+}
+
+.post-image-mask:before {
+  display: inline-block;
+  margin-right: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  top: 50%;
+  left: 55%;
+  content: "";
+  position: absolute;
+}
+
+.post-image-mask:after {
+  display: inline-block;
+  margin-right: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  vertical-align: middle;
+  top: 50%;
+  left: 45%;
+  content: "";
+  position: absolute;
+}
+
+.box:hover .post-image-mask {
+  opacity: 1;
+}
+
+.box:hover .post-image-mask:after {
+  animation: wd-fadeInLeft 0.3s ease;
+  animation-delay: 0.2s;
+}
+.box:hover .post-image-mask > span {
+  animation: wd-fadeInLeft 0.3s ease;
+  animation-delay: 0.1s;
+}
+.box:hover .post-image-mask:before {
+  animation: wd-fadeInLeft 0.3s ease;
+}
+
+@keyframes wd-fadeOutRight {
+  0% {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  100% {
+    -webkit-transform: translate3d(50px, 0, 0);
+    transform: translate3d(50px, 0, 0);
+  }
+}
+
+@keyframes wd-fadeInLeft {
+  from {
+    transform: translate3d(-50px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.post-readmore:after {
+  content: "...";
+  position: absolute;
+  bottom: 5px;
+  left: 110%;
+  font-size: 20px;
+  font-weight: 700;
+  opacity: 0;
+}
+
+.post-readmore {
+  position: relative;
+}
+
+.post-readmore:hover:after {
+  opacity: 1;
+  animation: wd-ShakeNext 1s ease infinite;
+}
+
+@keyframes wd-ShakeNext {
+  25% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: translate3d(-3px, 0, 0);
+    transform: translate3d(-3px, 0, 0);
+  }
+  75% {
+    -webkit-transform: translate3d(3px, 0, 0);
+    transform: translate3d(3px, 0, 0);
+  }
+}
+
+/*end */
+
+/*css product page*/
+
+a.button.wp-element-button.product_type_simple {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.footer-post .post-image-mask {
+  display: none;
+}
+
+.product-small:hover a.button.wp-element-button.product_type_simple {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 600ms ease-in;
+}
+
+a.quick-view.quick-view-added:hover:after {
+  content: "Xem nhanh";
+  position: absolute;
+  font-size: 11px;
+  text-transform: initial;
+  color: white;
+  display: inline-block;
+  background: black;
+  padding: 5px 10px;
+  font-weight: 400;
+  left: 50%;
+  border-radius: 2px;
+  bottom: calc(100% - 5px);
+  transform: translateX(-50%);
+}
+
+.wishlist-popup.dark {
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 60px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-container .product-small:hover {
+  padding-bottom: 50px;
+  margin-bottom: -50px;
+  background: white;
+  z-index: 1;
+}

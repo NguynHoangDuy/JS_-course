@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON SERVER</title>
+  </head>
+  <style>
+    .form-post {
+      margin: 0 auto;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .form-post input {
+      width: calc((100% / 2) - 80px);
+      margin: 0 10px;
+      padding: 10px;
+      box-sizing: border-box;
+      outline: none;
+      border-radius: 10px;
+      border: 1px solid gray;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .form-post button {
+      background: #00d1b2;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px;
+      /* height: 50px !important;  */
+      cursor: pointer;
+    }
+
+    .course-list {
+      overflow: hidden;
+      gap: 40px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    .course-item {
+      border: 1px solid gray;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+    .course-img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .course-content {
+      padding: 10px;
+    }
+    p {
+      margin: 5px 0;
+    }
+
+    p.course-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    p.course-author {
+      color: gray;
+      font-style: italic;
+    }
+    span.course-star {
+      color: yellow;
+      font-weight: 700;
+      background: black;
+      border-radius: 50%;
+      padding: 0 5px;
+      display: inline-block;
+    }
+    span.course-amount {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      background: gray;
+      color: white;
+      border-radius: 10px;
+    }
+    .course-group {
+      display: flex;
+      justify-content: space-between;
+    }
+    p.course-price {
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+    }
+    p.course-best--seller {
+      display: block;
+      background: #eceb98;
+      font-weight: bold;
+      padding: 5px 10px;
+      margin: 0 auto;
+      text-align: center;
+      width: 100px;
+    }
+    button.course-remove {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      border: 0;
+      background: lightgoldenrodyellow;
+      cursor: pointer;
+    }
+    .course-edit {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      border: 0;
+      background: lightgoldenrodyellow;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <form class="form-post" autocomplete="off" method="post">
+      <input type="text" name="image" placeholder="Enter your images" />
+      <input type="text" name="title" placeholder="Enter your title" />
+      <input type="text" name="author" placeholder="Enter your author" />
+      <input
+        type="text"
+        min="1"
+        max="5"
+        name="rating"
+        placeholder="Enter your rating"
+      />
+      <input type="text" name="price" placeholder="Enter your price" />
+      <input
+        type="checkbox"
+        name="bestSeller"
+        style="margin-right: 100px; width: 20px"
+      />
+      <input
+        type="number"
+        name="buyAmount"
+        placeholder="Enter your buy amount"
+      />
+      <button type="submit" class="form-submit">Add course</button>
+    </form>
+
+    <div class="course-list"></div>
+  </body>
+  <script src="./json-server.js"></script>
+</html>

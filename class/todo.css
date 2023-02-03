@@ -1,0 +1,60 @@
+.add-todo {
+  max-width: 600px;
+  margin: 50px auto 20px;
+  position: relative;
+  /* overflow: hiddens; */
+}
+.add-todo > input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 10px 60px 10px 10px;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.btn {
+  position: absolute;
+  height: 100%;
+  right: 0;
+  border: 1px solid gray;
+  width: 50px;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  color: white;
+  background-color: #2263e5;
+}
+
+.content-todo {
+  min-height: 300px;
+  margin: 0px auto;
+  max-width: 600px;
+  max-height: 300px;
+  /* background: red; */
+  box-sizing: border-box;
+  border: 1px solid gray;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.todo-item {
+  position: relative;
+  border-bottom: 1px solid gray;
+  padding: 15px;
+}
+.todo-desc {
+  width: 100%;
+  max-width: calc(100% - 70px);
+  margin: 0;
+}
+
+.btn-remove {
+  top: 50%;
+  background-color: red;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 8px;
+  width: auto;
+  height: 35px;
+}
